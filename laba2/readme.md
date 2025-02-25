@@ -119,7 +119,7 @@ function findMostTransactionsMonth(transactions) {
         return counts;
     }, {});
     const mostTransactionsMonth = Object.keys(monthCounts).reduce((a, b) => monthCounts[a] > monthCounts[b] ? a : b);
-    return parseInt(mostTransactionsMonth) + 1; // возвращаем месяц (с 1, а не с 0)
+    return parseInt(mostTransactionsMonth) + 1;
 }
 ```
 11. Функция, которая возвращает месяц, в котором было больше дебетовых транзакций.
