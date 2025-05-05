@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный Финансовый Трекер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Финансовый Трекер</h1>
+  <form id="transaction-form">
+    <input type="number" id="amount" placeholder="Сумма" required>
+    <select id="category" required>
+      <option value="Доход">Доход</option>
+      <option value="Расход">Расход</option>
+    </select>
+    <input type="text" id="description" placeholder="Описание" required>
+    <button type="submit">Добавить</button>
+  </form>
+  <table id="transaction-table">
+    <thead>
+      <tr>
+        <th>Дата и Время</th>
+        <th>Категория</th>
+        <th>Описание</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Строки транзакций добавляются здесь -->
+    </tbody>
+  </table>
+  <div id="transaction-details"></div>
+  <div id="total-sum">Общая сумма: 0</div>
+  <script type="module" src="src/index.js"></script>
+</body>
+</html>

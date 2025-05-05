@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  #transaction-details {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  #total-sum {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
